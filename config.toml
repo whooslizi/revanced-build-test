@@ -1,0 +1,23 @@
+enable-module-update = true
+parallel-jobs = 1
+
+[YouTube]
+build-mode = "both"
+excluded-patches = "'Enable debugging'"
+included-patches = ""
+version = "auto"
+
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+
+module-prop-name = "yt-rv"
+
+[Photos]
+app-name = "Google Photos"
+build-mode = "apk"
+version = "auto"
+
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
+
+module-prop-name = "photos-rv"
