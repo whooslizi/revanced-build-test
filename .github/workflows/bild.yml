@@ -23,6 +23,9 @@ jobs:
         id: ver
         run: echo "VER=$(date +%Y.%m.%d)" >> $GITHUB_OUTPUT
 
+      - name: Make build.sh executable
+        run: chmod +x build.sh
+      
       - name: Build
         run: ./build.sh config.toml
         env:
